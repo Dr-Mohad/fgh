@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="Chapter 9.css" />
+ 
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Home</title>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      font-family: sans-serif;
+      flex-wrap: wrap;
+      margin-left: 50px;
+      width: 92%;
+      background-color: white;
+      box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.01);
+
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-decoration: none;
+      margin-top: 70px;
+    }
+
+    .nav-links a {
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+    
+    }
+    .nav-links a:hover {
+  text-decoration: none;
+
+}
+
+    /* Keep your dropdown styling */
+    .dropdown-container {
+      position: relative;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #64748b;
+      z-index: 100;
+    }
+
+    #menu-toggle {
+      display: none;
+   
+    }
+
+    .dropdown-label {
+      background-color: #2563eb;
+      padding: 8px;
+      border: none;
+      border-radius: 60px;
+      width: 100px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      user-select: none;
+      display: block;
+      color: white;
+      position: relative;
+      top: 35px;
+      left: -100px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      margin-top: 8px;
+      width: 160px;
+      position: absolute;
+      z-index: 200;
+      margin-top: 40PX;
+      margin-left: -110px;
+      
+    }
+
+    #menu-toggle:checked + .dropdown-label + .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 14px;
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #e0e7ff;
+      text-decoration: none;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+      display: block;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 50;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    data-layer="Home"
+    class="Home"
+    style="width: 100%; max-width: 1181px; margin: 0 auto; background: #fefeff; overflow: hidden"
+  >
+
+    <div class="navbar">
+      <div style="color: #2563eb; font-size: 24px; font-weight: 700;position:relative;top:35px;">
+        𝙼𝚘𝚑𝚊𝚍-𝙲𝚊𝚍𝚍𝚎
+      </div>
+
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="About_Me.html">About Me</a>
+        <a href="About_My_University.html">About JUS</a>
+        <a href="About_My_Village.html">My Locality</a>
+        <a href="Contact Me.html">Contact</a>
+      </div>
+
+      <div class="dropdown-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="dropdown-label">Other</label>
+
+        <div class="dropdown-menu">
+            <a href="Chapter 6.html"><label for="menu-toggle">Chapter 6</label></a>
+          <a href="chapter 7.html"><label for="menu-toggle">Chapter 7</label></a>
+          <a href="Chapter 8.html"><label for="menu-toggle">Chapter 8</label></a>
+          <a href="Chapter 9.html"><label for="menu-toggle">Chapter 9</label></a>
+          <a href="Chapter 10.html"><label for="menu-toggle">Chapter 10</label></a>
+        </div>
+
+        <label for="menu-toggle" class="overlay"></label>
+      </div>
+    </div>
+     <div class="section-box">
+
+
+    <h1 style="text-decoration: none;font-weight: bold; color: black; text-align: center;">Practice 9.1</h1>
+        <div class="responsive-table" id="mahad2">
+    <div class="responsive-table">
+      <table border="1" style="text-decoration:underline;text-align: center;">
+        <caption>School History</caption>
+        <tr>
+          <th>School Attended</th>
+          <th>Years</th>
+          <th>Degree Awarded</th>
+        </tr>
+        <tr>
+          <td>Schaumburg High School</td>
+          <td>2012&mdash;2016</td>
+          <td>High School Diploma</td>
+        </tr>
+        <tr>
+          <td>Harper College</td>
+          <td>2016&mdash;2017</td>
+          <td>Web Developer Certificate</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <div class="section-box">
+
+    <h1 style="text-decoration: none;font-weight: bold; color: black; text-align: center;">Practice 9.2</h1>
+        <div class="responsive-table" id="mahad2">
+    <div class="responsive-table">
+      <table border="2">
+        <tr>
+          <td rowspan="3">Cana Island Lighthouse</td>
+          <td>Built: 1869</td>
+        </tr>
+        <tr><td>Automated: 1944</td></tr>
+        <tr><td>Tower Height: 65 feet</td></tr>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <div class="section-box">
+    <h1 style="text-decoration: none;font-weight: bold; color: black; text-align: center;">Practice 9.3</h1>
+    <div class="responsive-table" id="mahad1">
+      <table border="1">
+        <caption>Lighthouse Island Bistro Specialty Coffee Menu</caption>
+        <tr>
+          <th>Specialty Coffee</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr class="altrow">
+          <td>Lite Latte</td>
+          <td>Indulge in a shot of espresso with steamed, skim milk.</td>
+          <td>$3.50</td>
+        </tr>
+        <tr>
+          <td>Mocha Latte</td>
+          <td>Choose dark or milk chocolate with steamed milk.</td>
+          <td>$4.00</td>
+        </tr>
+        <tr class="altrow">
+          <td>MCP Latte</td>
+          <td>A luscious mocha latte with caramel and pecan syrup.</td>
+          <td>$4.50</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-box">
+    
+    <h1 style="text-decoration: none;font-weight: bold; color: black; text-align: center;">Practice 9.4</h1>
+    <div class="responsive-table" id="mahad1">
+     <table border="1" id="w1"> 
+ <caption>Lighthouse Island Bistro Specialty Coffee Menu</caption>
+   <tr>
+     <th>Specialty Coffee</th>
+	 <th>Description</th>
+     <th>Price</th>
+  </tr>
+  <tr>
+     <td>Lite Latte</td>
+     <td>Indulge in a shot of espresso with steamed, skim milk. </td>
+	 <td>$3.50</td>
+  </tr>
+  <tr>
+     <td>Mocha Latte</td>
+     <td>Choose dark or milk chocolate with steamed milk.</td>
+	 <td>$4.00</td>
+   </tr>
+    <tr>
+     <td>MCP Latte</td>
+     <td>A luscious mocha latte with caramel and pecan syrup. </td>
+	 <td>$4.50</td>
+  </tr>
+</table>
+</div>
+
+  </div>
+
+</body>
+</html>

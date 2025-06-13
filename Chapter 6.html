@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="chapter6.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home</title>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      font-family: sans-serif;
+      flex-wrap: wrap;
+      margin-left: 50px;
+      width: 92%;
+      background-color: white;
+      box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.01);
+
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-decoration: none;
+      margin-top: 70px;
+    }
+
+    .nav-links a {
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+    
+    }
+    .nav-links a:hover {
+  text-decoration: none;
+
+}
+
+    /* Keep your dropdown styling */
+    .dropdown-container {
+      position: relative;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #64748b;
+      z-index: 100;
+    }
+
+    #menu-toggle {
+      display: none;
+   
+    }
+
+    .dropdown-label {
+      background-color: #2563eb;
+      padding: 8px;
+      border: none;
+      border-radius: 60px;
+      width: 100px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      user-select: none;
+      display: block;
+      color: white;
+      position: relative;
+      top: 35px;
+      left: -90px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      margin-top: 8px;
+      width: 160px;
+      position: absolute;
+      z-index: 200;
+      
+    }
+
+    #menu-toggle:checked + .dropdown-label + .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 14px;
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #e0e7ff;
+      text-decoration: none;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+      display: block;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 50;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    data-layer="Home"
+    class="Home"
+    style="width: 100%; max-width: 1181px; margin: 0 auto; background: #fefeff; overflow: hidden"
+  >
+
+    <div class="navbar">
+      <div style="color: #2563eb; font-size: 24px; font-weight: 700;position:relative;top:35px;">
+        𝙼𝚘𝚑𝚊𝚍-𝙲𝚊𝚍𝚍𝚎
+      </div>
+
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="About_Me.html">About Me</a>
+        <a href="About_My_University.html">About JUS</a>
+        <a href="About_My_Village.html">My Locality</a>
+        <a href="Contact Me.html">Contact</a>
+      </div>
+
+      <div class="dropdown-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="dropdown-label">Other</label>
+
+        <div class="dropdown-menu">
+          <a href="Chapter 6.html"><label for="menu-toggle">Chapter 6</label></a>
+          <a href="chapter 7.html"><label for="menu-toggle">Chapter 7</label></a>
+          <a href="Chapter 8.html"><label for="menu-toggle">Chapter 8</label></a>
+          <a href="Chapter 9.html"><label for="menu-toggle">Chapter 9</label></a>
+          <a href="Chapter 10.html"><label for="menu-toggle">Chapter 10</label></a>
+        </div>
+
+        <label for="menu-toggle" class="overlay"></label>
+      </div>
+    </div>
+
+
+ <div class="main-content-wrapper">
+
+        <section id="practice1" class="practice-section">
+        <h2 style="text-decoration: none; font-weight: bold;">Practice 6.1</h2>
+
+            <div class="containe">
+                <div class="info">
+                 
+                    <img src="coffeelogo.jpg" alt="coffee logo">
+                    <h4 style="color: black;font-size: 4em;">Coffee House</h4>
+                </div>
+                <header class="nav-link">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Music</a>
+                        <a href="#">Jobs</a>
+                    </nav>
+                </header>
+                                <main>
+<h2 style="color: black;  text-align: left; font-size: 2em;">Follow the Winding Road to Coffee House</h2>
+<h3 style="color: black;  text-align: left; font-size: 2em;">Coffee House features:</h3>
+<ul style="color: black;  text-align: left;font-size: 1em;">
+  <li>Specialty Coffee and Tea</li>
+  <li>Bagels, Muffins, and Gluten-free Pastries</li>
+  <li>Organic Salads</li>
+  <li>Music and Poetry Readings</li>
+  <li>Open Mic Night</li>
+</ul>
+<div style="color: black;  text-align: left;font-size: 1em;" >
+12010 Garrett Bay Road<br>
+Ellison Bay, WI 54210<br>
+888-555-5555<br><br>
+</div>
+</main>
+<footer>
+Copyright &copy; 2020 Coffee House<br>
+</footer>
+            </div>
+
+
+        </section>
+
+        
+        <section id="practice2" class="practice-section">
+            <h2 style="text-align: center; text-decoration: none;font-weight: bold;">Practice 6.2</h2>
+            <div class="header-box">
+                <h3 style="text-align: center; font-weight: bolder; font-size: 2em;">Examples of The Box Model</h3>
+            </div>
+            <div class="container-box">
+                HTML elements display as boxes on web pages. This div element<br> is configured to have a blue background.
+            </div>
+        </section>
+
+        
+
+      
+         <section id="practice3" class="practice-section">
+            <h2 style="text-decoration: none; text-align: center;font-weight: bold;">Practice 6.3</h2>
+            <div class="container">
+        <div class="info">
+         
+            <h1>Lighthouse Bistro</h1>
+        </div>
+        <div class="nav-link">
+        <a href="#" style="color: purple;">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Directions</a>
+        <a href="#">Contact</a>
+        </div>
+        <h2>Locally Roasted Free-Trade Coffee</h2>
+        <p>indulge in the aroma of freshly ground roast coffee.speciality drinks are availble hot or cold.</p>
+        <h2>Speciality Pastries</h2>
+        <p>Enjoy of our fresh baked, organic pastries , including fresh fruit muffins,scones,croissants and cinnamon <br> rolls.</p>
+        <h2>Lunchtime is Anytime</h2>
+        <p>Savour delicious wraps and sandwiches on hearty,whole grain breads with local grown salad , fruit and vegetables.</p>
+        <h6>Copyright © 2020 Your Name Here</h6>
+    </div>
+        </section>
+    
+    <section id="practice4" class="practice-section">
+            <h2 style="text-decoration: none; text-align: center;font-weight: bold;">Practice 6.4</h2>
+           <div class="container">
+        <div class="info">
+         
+            <h1>Lighthouse Bistro</h1>
+        </div>
+        <div class="nav-link">
+        <a href="#" style="color: purple;">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Directions</a>
+        <a href="#">Contact</a>
+        </div>
+        <h2>Locally Roasted Free-Trade Coffee</h2>
+        <p>indulge in the aroma of freshly ground roast coffee.speciality drinks are availble hot or cold.</p>
+        <h2>Speciality Pastries</h2>
+        <p>Enjoy of our fresh baked, organic pastries , including fresh fruit muffins,scones,croissants and cinnamon <br> rolls.</p>
+        <h2>Lunchtime is Anytime</h2>
+        <p>Savour delicious wraps and sandwiches on hearty,whole grain breads with local grown salad , fruit and vegetables.</p>
+        <h6>Copyright © 2020 Your Name Here</h6>
+    </div>
+
+    </section>
+    <section id="practice5" class="practice-section">
+            <h2 style="text-decoration: none; text-align: center;font-weight: bold;">Practice 6.5</h2>
+           <div class="cont">
+        <div class="info">
+            <h1>Lighthouse Bistro</h1>
+        </div>
+        <div class="nav-link">
+        <a href="#" style="color: purple;">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Directions</a>
+        <a href="#">Contact</a>
+        </div>
+        <h2>Locally Roasted Free-Trade Coffee</h2>
+        <p>indulge in the aroma of freshly ground roast coffee.speciality drinks are availble hot or cold.</p>
+        <h2>Speciality Pastries</h2>
+        <p>Enjoy of our fresh baked, organic pastries , including fresh fruit muffins,scones,croissants and cinnamon <br> rolls.</p>
+        <h2>Lunchtime is Anytime</h2>
+        <p>Savour delicious wraps and sandwiches on hearty,whole grain breads with local grown salad , fruit and vegetables.</p>
+        <h6>Copyright © 2020 Your Name Here</h6>
+    </div>
+    </section>
+
+
+         <section id="practice6" class="practice-section">
+            <h2 style="text-align: center; text-decoration: none;font-weight: bold;">Practice 6.6</h2>
+            <div class="information">
+                <header style="background-image: url('headerbackblue.jpg'); background-position: right;">
+                    <h1 style="text-align: center;">KayakDoorCountry.net</h1>
+                </header>
+                <div class="nav-link">
+                    <a href="#" style="color: purple;">Home</a>
+                    <a href="#">Tours</a>
+                    <a href="#">Reservations</a>
+                    <a href="#">Contact</a>
+                </div>
+                <main style="background-image: url('heroback2.jpg'); background-size: 100% 100%;">
+                    <h1>Your next adventure is only a paddle away.....</h1>
+                    <p>Take a guided kayak tour while you explore the shorelne of scentic Door Country.</p>
+                    <h1>Featured tours this week:</h1>
+                    <ul>
+                        <li>Gana Island</li>
+                        <li>Mink River</li>
+                        <li>Europe Lake</li>
+                    </ul>
+                </main>
+                <footer>
+                    copyright ©️2025 KayakDoorCountry.net
+                </footer>
+            </div>
+        </section>
+
+
+
+                </section>
+        <section id="practice7" class="practice-section">
+            <h2 style="text-align: center; text-decoration:none;font-weight: bold;">Practice 6.7</h2>
+            <div id="content" style="background-image: url('fall.jpg');">
+                <h1>Fall Nature Hikes</h1>
+            </div>
+        </section>
+               <section id="practice8" class="practice-section">
+            <h2 style="text-align: center; text-decoration:none;font-weight: bold;">Practice 6.8</h2>
+            <div id="content" style="background-image: url('fall.jpg');">
+                <h1>Fall Nature <br>Hikes</h1>
+            </div>
+        </section>
+
+        <section id="practice9" class="practice-section">
+            <h2 style="text-align: center; text-decoration:none;font-weight: bold;">Practice 6.9</h2>
+            <div id="content" style="background-image: url('fall.jpg');">
+                <h1 style="text-align: left; ">Fall Nature <br>Hikes</h1>
+            </div>
+        </section>
+
+
+
+              <section id="practice10p1" class="practice-section">
+                        <h2 style="text-align: center;text-decoration:none;font-weight: bold; color: black;">Practice 6.10.2</h2>
+
+            <div class="containn">
+            <h1>Linear Gradient</h1>
+            <p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+
+            </div>
+        </section>
+        <section id="practice10p2" class="practice-section">
+                        <h2 style="text-align: center;text-decoration:none;font-weight: bold; color: black;">Practice 6.10.2</h2>
+            <div class="contain">
+                            <h1>Radial Gradient</h1>
+                            <p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+<h2>Heading 2</h2>
+<p>This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content. This is content.</p>
+
+            </div>
+        </section>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
