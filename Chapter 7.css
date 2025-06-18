@@ -709,3 +709,94 @@ font-family: Verdana, Arial, sans-serif;
 		 clear: right;
          padding-bottom:20px;
 }                                                                                
+#practice11 {
+    box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #00005D;
+    padding-top: 70px; /* Space for fixed nav */
+    position: relative; /* For containing absolute positioned nav */
+}
+
+#practice11 #wrapper {
+    background-color: #b3c7e6;
+    color: #000066;
+    width: 80%;
+    margin: auto;
+    min-width: 940px;
+}
+
+#practice11 h2 {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#practice11 .section-nav {
+    position: absolute;
+    top: 0;
+    left: 0; /* Keep full width */
+    width: 100%;
+    height: 50px;
+    background-color: #B3C7E6;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end; /* Align content to right */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding-right: 20px; /* Add some padding from the right edge */
+}
+
+#practice11 .section-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:12px;
+    justify-content: flex-start;
+}
+
+#practice11 .section-nav li {
+    display: inline;
+}
+
+#practice11 .section-nav a {
+    text-decoration: none;
+   
+    color: #2c2cff;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+#practice11 header {
+    background-color: #869dc7;
+    color: #00005D;
+    font-size: 150%;
+    padding: 10px 10px 10px 155px;
+    background-image: url(lighthouselogo.jpg);
+    background-repeat: no-repeat;
+    height: 130px;
+}
+
+#practice11 main {
+    padding: 20px 20px 0 20px;
+    background-color: #ffffff;
+    color: #000000;
+    display: block;
+}
+
+#practice11 main img {
+    margin: 10px;
+    float: right;
+}
+
+#practice11 footer {
+    font-size: 70%;
+    text-align: center;
+    clear: right;
+    padding-bottom: 20px;
+    background-color: #869dc7;
+}                                 
