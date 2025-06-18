@@ -227,7 +227,7 @@ header{
         }
         #practice3 .container{
             background: linear-gradient(white , #a4b5d7);
-            width: 67%;
+            width: 100%;
             padding: 10px;
             float: left;
         }
@@ -524,3 +524,5 @@ header{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+#conttt{
+    width:100%
